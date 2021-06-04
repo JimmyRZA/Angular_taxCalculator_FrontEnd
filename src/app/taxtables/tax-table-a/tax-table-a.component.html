@@ -1,0 +1,29 @@
+<div class="container">
+    <h3>Tax Table for 2021 </h3>
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-0">
+            <div>
+                <label for="taxYear">1. Tax Year 2021</label>
+            </div>
+            <div>
+                <label for="taxYear">Individual and special trusts</label>
+            </div>
+
+            <table id="atable" border="1">
+
+                <thead>
+                    <tr>
+                        <th>Taxable Income</th>
+                        <th>Rate Of Tax</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let tempTaxtableInfo of taxtableInfo">
+                        <td>{{ tempTaxtableInfo.TaxbleIncome }}</td>
+                        <td>{{ tempTaxtableInfo.RateOfTax }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>

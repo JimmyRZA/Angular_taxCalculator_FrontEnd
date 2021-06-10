@@ -61,7 +61,7 @@ export class EmployeeCalculatedPayeComponent implements OnInit {
   }
 
   onAddMember() {
-    const control = new FormControl('null', Validators.required);
+    const control = new FormControl('Please enter member name and surname here', Validators.required);
     (<FormArray>this.taxForm.get('members')).push(control);
   }
 
